@@ -1,0 +1,31 @@
+/* Light pink background for invalid inputs, only after form submission */
+form.submitted input:invalid {
+    background-color: lightpink;
+}
+
+form.submitted select:invalid {
+    background-color: lightpink;
+}
+
+/* Display the error message when the form is invalid */
+.error-message {
+    color: red;
+    display: none;
+}
+
+form.submitted .error-message {
+    display: block;
+}
+
+/* Change background to white when input is valid */
+input:required:valid {
+    background-color: white;
+}
+
+select:required:valid {
+    background-color: white;
+}
+
+
+
+/* I cannot get the light pink to work, but there is still an error message that appears when the form is invalid. */
